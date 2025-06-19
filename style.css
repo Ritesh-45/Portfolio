@@ -53,13 +53,13 @@ body {
 }
 
 .header{
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
     padding: 4rem 12% 4rem;
-    background-color: black;
-    backdrop-filter: blur;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
     z-index: 20;
     display: flex;
     justify-content: space-between;
@@ -68,7 +68,7 @@ body {
 .logo{
     font-size: 3rem;
     font-weight: 800;
-    color: white;
+    color: #E0E0E0;
     transition: 0.3s ease;
 }
 
@@ -77,13 +77,13 @@ body {
 }
 
 .logo span{
-    text-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+    text-shadow: 0 0 25px rgba(254, 254, 254, 0.5);
 }
 
 .navbar a{
     font-size: 1.8rem;
     margin-left: 4rem;
-    color: white;
+    color: #E0E0E0;
     font-weight: 500;
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
@@ -91,7 +91,7 @@ body {
 
 .navbar a:hover,
 .navbar a.active {
-    color: white;
+    color: #E0E0E0;
     border-bottom: 3px solid white;
 }
 

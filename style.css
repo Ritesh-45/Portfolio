@@ -1,5 +1,25 @@
+.michroma-regular {
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Michroma', sans-serif;
+}
+html{
+    font-size: 50%;
+    overflow-x: hidden;
+}
 body {
-    background-image: url('Untitled design.png');
+    background-image: url('grid.png');
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -8,7 +28,6 @@ body {
 .content {
     position: relative;
     z-index: 10; /* Above spotlight */
-    display: flex;
 }
 
 .spotlight-overlay {
@@ -31,5 +50,52 @@ body {
     position: absolute;
     right: 0;
     top: 20;
-    border: 1px solid white;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 4rem 12% 4rem;
+    background-color: black;
+    backdrop-filter: blur;
+    z-index: 20;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 3rem;
+    font-weight: 800;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+.logo span{
+    text-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+}
+
+.navbar a{
+    font-size: 1.8rem;
+    margin-left: 4rem;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: white;
+    border-bottom: 3px solid white;
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
 }

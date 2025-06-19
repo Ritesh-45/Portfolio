@@ -1,0 +1,35 @@
+body {
+    background-image: url('Untitled design.png');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.content {
+    position: relative;
+    z-index: 10; /* Above spotlight */
+    display: flex;
+}
+
+.spotlight-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    pointer-events: none;
+    mask-image: radial-gradient(circle 2500px at 0 0, transparent 0%, black 100%);
+    -webkit-mask-image: radial-gradient(circle 250px at 0 0, transparent 0%, black 100%);
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    z-index: 5; /* Below content */
+}
+.model{
+    height: 700px;
+    width: auto;
+    position: absolute;
+    right: 0;
+    top: 20;
+    border: 1px solid white;
+}

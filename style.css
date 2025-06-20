@@ -363,5 +363,72 @@ span{
 
 .contact form .btn{
     margin-top: 2rem;
+}
 
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: rgba(0, 0, 0, 0.023);
+    backdrop-filter: blur(7px);
+}
+
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: #A020F0;
+}
+
+.footer .social a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    background: transparent;
+    border: 2px solid #A020F0;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    color: #FF4FDB;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease-in-out;
+}
+
+.footer .social a:hover{
+    transform: scale(1.2)translateY(-10px);
+    background-color: #A020F0;
+    color: black;
+    box-shadow: 0 0 25px #A020F0;
+}
+
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a{
+    color : #E0E0E0;
+    border-bottom: 3px solid transparent;
+    transform: 0.3s ease-in-out;
+}
+
+.footer ul li a:hover{
+    border-bottom: 1.9px solid #E0E0E0;
+}
+
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer .copyright{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: #E0E0E0;
 }

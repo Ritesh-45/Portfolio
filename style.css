@@ -124,6 +124,7 @@ section{
 
 span{
     color: #FF4FDB;
+    text-shadow: 0 0 25px #FF4FDB;
 }
 
 .home_content h1{
@@ -134,10 +135,11 @@ span{
     overflow-x:visible;
 }
 
-.model_box model{
+.model_box .model{
     position: relative;
     top: 3rem;
-    width: 32vw;
+    left: 10rem;
+    width: 42vw;
 }
 
 .home_content p{

@@ -15,13 +15,15 @@
     font-family: 'Michroma', sans-serif;
     color: #E0E0E0  ;
 }
+
 html{
     font-size: 50%;
     overflow-x: hidden;
 }
+
 body {
     background-image: url('grid.png');
-    background-size: cover;
+    background-size: repeat;
     background-position: center;
     overflow: hidden;
 }
@@ -45,23 +47,16 @@ body {
     -webkit-mask-repeat: no-repeat;
     z-index: 5; /* Below content */
 }
-.model{
-    height: 700px;
-    width: auto;
-    position: absolute;
-    right: 0;
-    top: 20;
-}
 
 .header{
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 4rem 12% 4rem;
     background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
-    z-index: 20;
+    z-index: 15;
     display: flex;
     justify-content: space-between;
 }
@@ -99,4 +94,48 @@ body {
 .navbar ul{
     list-style: none;
     display: flex;
+}
+
+.home{
+    margin-top: 98px;
+}
+
+section{
+    min-height: 100vh;
+    padding: 10rem 12% 10rem;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+}
+
+.home_content{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    text-align: left;
+    justify-content: center;
+    margin-top: 3rem;
+    max-width: 35rem;
+}
+
+span{
+    color: #FF4FDB;
+}
+
+.home_content h1{
+    font-size: 7rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    line-height: 1;
+    overflow-x:visible;
+}
+
+.model_box model{
+    position: relative;
+    top: 3rem;
+    width: 32vw;
 }

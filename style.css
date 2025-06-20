@@ -321,3 +321,47 @@ span{
 ::-webkit-scrollbar-track{
     background-color: #FF4FDB;
 }
+
+.contact{
+    background-color: transparent;
+}
+
+.contact h2{
+    margin-bottom: 3rem;
+    color: #E0E0E0;
+}
+
+.contact form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 5 auto;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 2rem;
+}
+
+.contact form .input_box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact form .input_box input,
+.contact form textarea{
+    width: 100%;
+    padding: 2.5rem;
+    font-size: 1.8rem;
+    color: #E0E0E0;
+    background-color: rgb(18, 18, 18);
+    border-radius: 2rem;
+    border: 2px solid #FF4FDB;
+    margin: 1.5rem 0;
+    resize: none;
+}
+
+.contact form .btn{
+    margin-top: 2rem;
+
+}

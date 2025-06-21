@@ -442,7 +442,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 /* Firefox */
 input[type="number"] {
-  -moz-appearance: textfield;
+    -moz-appearance: textfield;
 }
 
 .project_cards{
@@ -451,8 +451,9 @@ input[type="number"] {
     justify-content: center;
     margin: 5rem auto;
     margin-top: 0;
+    gap: 3rem;
 }
-.card{
+.project_card{
     background-color: black;
     border: 2px solid #A020F0;
     border-radius: 2rem;
@@ -463,43 +464,44 @@ input[type="number"] {
     transition: 0.3s ease-in-out;
 }
 
-.card:hover{
+.project_card:hover{
     transform: scale(1.05);
     box-shadow: 0 0 25px #A020F0;
 }
 
-.card .image{
+.project_card .image{
     max-width: 29rem;
     height: 15rem;
     justify-content: center;
 }
 
-.card .image img{
+.project_card .image img{
     width: 100%;
     height: 15rem;
     border-radius: 1rem;
+    border: 2px solid #A020F0;
 }
 
-.card h2{
+.project_card h2{
     font-size: 1.5rem;
     color: #E0E0E0;
     margin-top: 1.5rem;
     text-align: center;
 }
-.card p{
+.project_card p{
     font-size: 1.2rem;
     color: #E0E0E0;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
-.card .tags{
+.project_card .tags{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
 }
 
-.card .tags span{
+.project_card .tags span{
     background-color: black;
     border: 1px solid #A020F0;
     color: #E0E0E0;
@@ -510,13 +512,13 @@ input[type="number"] {
     cursor: pointer;
 }
 
-.card .btn_group{
+.project_card .btn_group{
     display: flex;
     justify-content: center;
     gap: 1rem;
 }
 
-.card .btn_group a{
+.project_card .btn_group a{
     display: inline-block;
     padding: 0.8rem 1.5rem;
     background-color: #A020F0;
@@ -528,6 +530,76 @@ input[type="number"] {
     box-shadow: none;
 }
 
-.card .btn_group a:hover{
+.project_card .btn_group a:hover{
     color: #E0E0E0;
+}
+
+.course_cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+    margin: 5rem auto;
+    margin-top: 0;
+}
+/* From Uiverse.io by gharsh11032000 */ 
+.course_card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28rem;
+    box-shadow: 0 0 10px #A020F0;
+    border: 2px solid #A020F0;
+    padding: 2rem;
+    overflow: hidden;
+    border-radius: 10px;
+    background: black;
+    transition: 0.3s ease-in-out;
+}
+
+.card_content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    color: #E0E0E0;
+    transition: 0.3s ease-in-out;
+}
+
+.card_content .card_heading {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.card_content .card_para {
+  line-height: 1.5;
+    font-size: 1.1rem;
+}
+
+.card_content .card_btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #A020F0;
+    color: black;
+    border-radius: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    box-shadow: none;
+    font-weight: 600;
+}
+
+.course_card:hover {
+    box-shadow: 0 0 25px #A020F0;
+    transform: scale(1.05);
+}
+
+.card_content .card_btn:hover {
+  color: #E0E0E0;
+  transform: scale(1.1);
+}
+
+.card_content .card_btn:active {
+  box-shadow: none;
 }

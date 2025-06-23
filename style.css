@@ -436,8 +436,8 @@ span{
 /* Chrome, Safari, Edge, Opera */
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 /* Firefox */
@@ -462,6 +462,7 @@ input[type="number"] {
     padding: 3rem ;
     box-shadow: 0 0 10px #A020F0;
     transition: 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .project_card:hover{
@@ -556,6 +557,7 @@ input[type="number"] {
     border-radius: 10px;
     background: black;
     transition: 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .card_content {
@@ -596,10 +598,10 @@ input[type="number"] {
 }
 
 .card_content .card_btn:hover {
-  color: #E0E0E0;
-  transform: scale(1.1);
+    color: #E0E0E0;
+    transform: scale(1.1);
 }
 
 .card_content .card_btn:active {
-  box-shadow: none;
+    box-shadow: none;
 }

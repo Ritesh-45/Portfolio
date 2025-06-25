@@ -602,97 +602,41 @@ input[type="number"] {
     box-shadow: none;
 }
 
-@media (max-width: 1285px){
-    html{
-        font-size: 55%;
-    }
-    .course_cards{
-        padding-bottom: 7rem;
-        grid-template-columns: repeat(2,1fr);
-        margin: 0 5rem;
-    }
+.mobile{
+    display: none;
 }
 
-@media (max-width: 991px){
-    header{
-        padding: 2rem 3%;
-    }
-    section{
-        padding: 10rem 3% 2rem;
-    }
-    .timeline-items::before{
-        left: 7px;
-    }
-    .timeline-item:nth-child(odd){
-        padding-right: 0;
-        text-align: left;
-    }
-    .timeline-item:nth-child(odd),
-    .timeline-item:nth-child(even){
-        padding-left: 37px;
-    }
-    .timeline-dot{
-        left: 0;
-    }
-    .courses{
-        padding-bottom: 7rem;
-    }
-    .projects .project_cards{
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .contact form{
-        flex-direction: column;
-    }
+@media only screen and (max-width: 768px) {
+    .section,
+    .header,
     .footer{
-        padding: 2rem 3%
-    }
-}
-
-@media (max-width: 895px){
-    #menu-icon{
-        diaplay: block;
-    }
-    .navbar{
-        position: absolute;
-        top: 100%;
-        right: 0;
-        width: 50%;
-        padding: 1rem 3%;
-        background: rgba(0, 0, 0, 0.8);
-        backdrop-filter: blur(20px);
-        border-bottom-left-radius: 2rem;
-        border-left: 2px solid #A020F0;
-        border-bottom: 2px solid #A020F0;
         display: none;
     }
-    .navbar.active{
-        display: block;
+    .mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem;
+        min-height: 90vh;
     }
-    .navbar a{
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-        color: #E0E0E0;
+    .mobile h1{
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 2rem;
     }
-    .home{
-        flex-direction: column-reverse;
-        margin: 5rem 4rem;
+    .mobile p{
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 2rem;
+        line-height: 1.5;
     }
-    .home_content{
-        font-size: 2.6rem;
-    }
-    .home_content h1{
-        font-size: 8rem;
-        margin-top: 3rem;
-    }
-    .home_content p{
-        max-width: 600px;
-        margin: 0 auto;
-    }
-    .model_box .model{
-        width: 100%;
-    }
-    spline-viewer{
-        width:56vw;
+}
+
+@media only screen and (max-width: 480px) {
+    .section,
+    .header,
+    .footer{
+        display: none;
     }
 }

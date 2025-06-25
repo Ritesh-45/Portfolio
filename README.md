@@ -6,7 +6,7 @@ A futuristic, responsive, and interactive personal portfolio website built using
 
 ## 🚀 Live Demo
 
-> [Click here to view the live portfolio](https://ritesh-tikader.netlify.app)
+> [Click here to view the live portfolio](https://myproject-nine-smoky.vercel.app/)
 
 ---
 

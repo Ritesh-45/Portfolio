@@ -26,3 +26,13 @@ window.onscroll = () => {
     }
   })
 }
+window.addEventListener('load', () => {
+    const preloader = document.getElementById('preloader');
+    const main = document.getElementById('main-content');
+    
+    preloader.classList.add('fade-out');
+    setTimeout(() => {
+      preloader.style.display = 'none';
+      main.style.display = 'block';
+    }, 4000); // match fade-out transition time
+  });

@@ -34,5 +34,5 @@ window.addEventListener('load', () => {
     setTimeout(() => {
       preloader.style.display = 'none';
       main.style.display = 'block';
-    }, 4000); // match fade-out transition time
+    }, 3500); // match fade-out transition time
   });

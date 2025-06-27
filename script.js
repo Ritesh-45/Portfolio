@@ -36,3 +36,25 @@ window.addEventListener('load', () => {
       main.style.display = 'block';
     }, 3500); // match fade-out transition time
   });
+document.addEventListener("DOMContentLoaded", () => {
+  const hasSeenIntro = localStorage.getItem("hasSeenIntro");
+  const intro = document.getElementById("intro");
+  const mainContent = document.getElementById("main-content");
+
+  if (!hasSeenIntro) {
+    // Show intro
+    intro.style.display = "flex";
+    mainContent.style.display = "none";
+
+    // After a delay, hide intro and show main content
+    setTimeout(() => {
+      intro.style.display = "none";
+      mainContent.style.display = "block";
+      localStorage.setItem("hasSeenIntro", "true");
+    }, 3000); // 3 seconds
+  } else {
+    // Skip intro
+    intro.style.display = "none";
+    mainContent.style.display = "block";
+  }
+});

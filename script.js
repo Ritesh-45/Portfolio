@@ -26,3 +26,28 @@ window.onscroll = () => {
     }
   })
 }
+document.addEventListener("DOMContentLoaded", () => {
+  const hasSeenIntro = localStorage.getItem("hasSeenIntro");
+  const intro = document.getElementById("preloader");
+  const mainContent = document.getElementById("content");
+
+  if (!hasSeenIntro) {
+    intro.style.display = "flex";
+    mainContent.style.display = "none";
+
+    // Optional fade animation
+    setTimeout(() => {
+      intro.classList.add('fade-out');
+    }, 3500);
+
+    setTimeout(() => {
+      intro.style.display = "none";
+      mainContent.style.display = "block";
+      localStorage.setItem("hasSeenIntro", "true");
+    }, 3500);
+  } else {
+    intro.style.display = "none";
+    mainContent.style.display = "block";
+  }
+});
+

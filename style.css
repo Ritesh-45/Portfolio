@@ -440,6 +440,25 @@ input[type="number"]::-webkit-inner-spin-button {
 input[type="number"] {
     -moz-appearance: textfield;
 }
+.internship_cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5rem auto;
+    margin-top: 0;
+    gap: 3rem;
+}
+.internship_card{
+    background-color: black;
+    border: 2px solid #A020F0;
+    border-radius: 2rem;
+    max-width: 35rem;
+    margin: 5rem auto;
+    padding: 3rem ;
+    box-shadow: 0 0 10px #A020F0;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
 
 .project_cards{
     display: flex;

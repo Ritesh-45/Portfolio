@@ -444,9 +444,9 @@ input[type="number"] {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 5rem;
     margin: 5rem auto;
     margin-top: 0;
-    gap: 3rem;
 }
 .internship_card{
     background-color: black;
@@ -458,6 +458,10 @@ input[type="number"] {
     box-shadow: 0 0 10px #A020F0;
     transition: 0.3s ease-in-out;
     cursor: pointer;
+}
+
+.Card_post{
+    font-size: 15px;
 }
 
 .project_cards{
